@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Sara e Flávio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="white-bg">
+    <!-- Menu Hambúrguer -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="#livros">Livros</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#" onclick="toggleBackground()">Trocar Fundo</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <header>
+        <h1>Livraria Sara e Flávio</h1>
+        <a href="#inicio" class="back-to-top">⬆️ Voltar ao Início</a>
+    </header>
+
+    <main>
+        <section id="livros">
+            <h2>Nossos Livros</h2>
+            <div class="book-gallery">
+                <div class="book" onclick="showBook('livro1')">
+                    <img src="img/livro1.jpg" alt="Capa do Livro 1">
+                    <p>Livro 1</p>
+                </div>
+                <div class="book" onclick="showBook('livro2')">
+                    <img src="img/livro2.jpg" alt="Capa do Livro 2">
+                    <p>Livro 2</p>
+                </div>
+                <div class="book" onclick="showBook('livro3')">
+                    <img src="img/livro3.jpg" alt="Capa do Livro 3">
+                    <p>Livro 3</p>
+                </div>
+                <div class="book" onclick="showBook('livro4')">
+                    <img src="img/livro4.jpg" alt="Capa do Livro 4">
+                    <p>Livro 4</p>
+                </div>
+                <div class="book" onclick="showBook('livro5')">
+                    <img src="img/livro5.jpg" alt="Capa do Livro 5">
+                    <p>Livro 5</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre os Livros</h2>
+            <div id="book-details">
+                <!-- Sinopses dos livros serão exibidas aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sara e Flávio</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

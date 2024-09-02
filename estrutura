@@ -1,0 +1,11 @@
+livraria/
+│
+├── index.html
+├── styles.css
+├── scripts.js
+└── img/
+    ├── livro1.jpg
+    ├── livro2.jpg
+    ├── livro3.jpg
+    ├── livro4.jpg
+    └── livro5.jpg

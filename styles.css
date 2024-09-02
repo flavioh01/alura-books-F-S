@@ -1,0 +1,142 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.book-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.book img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+#book-details {
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/* Menu Hambúrguer */
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 4px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #333;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+}
+
+nav.hidden {
+    transform: translateX(0);
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Flecha de Voltar ao Início */
+.back-to-top {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.back-to-top:hover {
+    color: #555;
+}
+
+/* Estilo para fundo branco */
+.white-bg {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Estilo para fundo preto */
+.black-bg {
+    background-color: #000;
+    color: #fff;
+}
+
